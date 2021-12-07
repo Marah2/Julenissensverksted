@@ -6,11 +6,36 @@ body {
 }
 
 .container {
-    background-color: #146B3A;
+   
     border-radius: 25px;
     padding: 20px;
 }
 
 .nisse {
     width: 100%;
+}
+.container .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(33rem, 1fr));
+    gap:1.5rem;
+}
+.container .box-container .box{
+    text-align: center;
+    
+    padding: 2rem;
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color:rgb(232, 233, 241);
+    background-color:#ac0e13;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.btn:hover{
+    background-color:goldenrod;
+    color:#fff;
 }
